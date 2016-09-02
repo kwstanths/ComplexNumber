@@ -18,10 +18,5 @@ int main(){
 	std::cout << my_cm1 << " - " << my_cm2 << " = " << my_cm1 - my_cm2 << std::endl;
 	//std::cout << my_cm1 << " is" << (my_cm1 == my_cm2)?" ":" not " << my_cm2 << std::endl;
 
-
-
-
-
-
 	system("PAUSE");
 }
