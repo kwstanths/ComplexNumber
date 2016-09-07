@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 
 #include "ComplexNumber.hpp"
 
@@ -8,10 +8,11 @@ int main(){
 	ComplexNumber::complex_number my_cm2(3.9,2.1);
 
 	std::cout << my_cm1 << std::endl;
-	std::cout << "The above complex number has: " << my_cm1.getRealPart() << " as real part" << std::endl;
-	std::cout << "and: " << my_cm1.getImaginaryPart() << " as imaginary part" << std::endl;
-	std::cout << "The complex number: " << my_cm2 << " has conjugate the: " << my_cm2.getConjugate() << std::endl;
-	std::cout << "The complex number: " << my_cm1 << " can be written in polar form: " << my_cm1.getAbsoluteValue() << "*e^(i" << my_cm1.getPhase() << ")" << std::endl;
+	std::cout << "The above complex number has: " << my_cm1.Real() << " as real part" << std::endl;
+	std::cout << "and: " << my_cm1.Imaginary() << " as imaginary part" << std::endl;
+	std::cout << "The complex number: " << my_cm2 << " has conjugate the: " << my_cm2.Conjugate() << std::endl;
+	std::cout << "The complex number: " << my_cm1 << " can be written in polar form: " << my_cm1.AbsoluteValue() << "*e^(i" << my_cm1.Phase() << ")" << std::endl;
+	std::cout << "Or: " << my_cm1.AbsoluteValue() << " " << my_cm1.Angle() << "\370" << std::endl;
 	std::cout << my_cm1 << "*" << my_cm2 << " = " << my_cm1*my_cm2 << std::endl;
 	std::cout << "(" << my_cm1 << ")/(" << my_cm2 << ") = " << my_cm1/my_cm2 << std::endl;
 	std::cout << my_cm1 << " + " << my_cm2 << " = " << my_cm1 + my_cm2 << std::endl;
@@ -20,3 +21,5 @@ int main(){
 
 	system("PAUSE");
 }
+
+
