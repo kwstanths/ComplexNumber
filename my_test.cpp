@@ -2,10 +2,10 @@
 
 #include "ComplexNumber.hpp"
 
-int main(){
+int main(int argc, char** argv){
 
-	ComplexNumber::complex_number my_cm1(4.5,6.7);
-	ComplexNumber::complex_number my_cm2(3.9,2.1);
+	ComplexNumber::complex_number my_cm1(atoi(argv[1]),atoi(argv[2]));
+	ComplexNumber::complex_number my_cm2(atoi(argv[3]),atoi(argv[4]));
 
 	std::cout << my_cm1 << std::endl;
 	std::cout << "The above complex number has: " << my_cm1.Real() << " as real part" << std::endl;
@@ -19,7 +19,7 @@ int main(){
 	std::cout << my_cm1 << " - " << my_cm2 << " = " << my_cm1 - my_cm2 << std::endl;
 	//std::cout << my_cm1 << " is" << (my_cm1 == my_cm2)?" ":" not " << my_cm2 << std::endl;
 
-	system("PAUSE");
+	printf("\033[15A");
 }
 
 
