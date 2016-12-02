@@ -1,3 +1,6 @@
+#ifndef __COMPLEXNUMBER_HPP__
+#define __COMPLEXNUMBER_HPP__
+
 #define _USE_MATH_DEFINES
 
 #include <iostream>
@@ -78,7 +81,7 @@ namespace ComplexNumber{
 				return real*real + imaginary*imaginary;
 			}
 
-			/** 
+			/**
 				Get the complex numbers' phase
 				@return A double containing the phase of the complex number in radians
 			*/
@@ -130,3 +133,5 @@ namespace ComplexNumber{
 
 	};
 }
+
+#endif

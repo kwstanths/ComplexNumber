@@ -1,4 +1,6 @@
-﻿#include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
 
 #include "ComplexNumber.hpp"
 
@@ -17,9 +19,5 @@ int main(int argc, char** argv){
 	std::cout << "(" << my_cm1 << ")/(" << my_cm2 << ") = " << my_cm1/my_cm2 << std::endl;
 	std::cout << my_cm1 << " + " << my_cm2 << " = " << my_cm1 + my_cm2 << std::endl;
 	std::cout << my_cm1 << " - " << my_cm2 << " = " << my_cm1 - my_cm2 << std::endl;
-	//std::cout << my_cm1 << " is" << (my_cm1 == my_cm2)?" ":" not " << my_cm2 << std::endl;
-
-	printf("\033[15A");
+	std::cout << my_cm1 << " is" << ((my_cm1 == my_cm2)?" ":" not ") << my_cm2 << std::endl;
 }
-
-
